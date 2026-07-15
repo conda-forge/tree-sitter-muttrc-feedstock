@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.0.6
+  version: "0.1.0"
 
 package:
   name: tree-sitter-muttrc
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/tree-sitter-muttrc/tree_sitter_muttrc-${{ version }}.tar.gz
-  sha256: 067c6c4da39248322656cd814f71664ff33a1a3ce06b8fcc1f6e3214fb74a6ed
+  sha256: 6f90bc70a0f7b0a661c50805e97742a784002cb17ab8a3b3896fb486d54f591e
 
 build:
-  number: 2
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
